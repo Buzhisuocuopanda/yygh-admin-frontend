@@ -28,8 +28,12 @@
     </el-form>
 
     <div class="chart-container">
-      <div id="chart" ref="chart"
-           class="chart" style="height:500px;width:100%"/>
+      <div
+        id="chart"
+        ref="chart"
+        class="chart"
+        style="height:500px;width:100%"
+      />
     </div>
   </div>
 </template>
@@ -37,7 +41,9 @@
 <script>
 import echarts from 'echarts'
 import statisticsApi from '@/api/orderStatistics'
-
+/*
+import statisticsApi from '@/api/sta'
+*/
 export default {
 
   data() {
@@ -72,7 +78,7 @@ export default {
       // 指定图表的配置项和数据
       var option = {
         title: {
-          text: this.title + '挂号量统计'
+          text: this.title + '预约量统计'
         },
         tooltip: {},
         legend: {

@@ -148,13 +148,13 @@ export const constantRoutes = [
       {
         path: 'orderInfo/list',
         name: '订单列表',
-        component: () =>import('@/views/order/orderInfo/list'),
+        component: () => import('@/views/order/orderInfo/list'),
         meta: { title: '订单列表' }
       },
       {
         path: 'orderInfo/show/:id',
         name: '查看',
-        component: () =>import('@/views/order/orderInfo/show'),
+        component: () => import('@/views/order/orderInfo/show'),
         meta: { title: '查看', noCache: true },
         hidden: true
       }
@@ -172,13 +172,11 @@ export const constantRoutes = [
       {
         path: 'order/index',
         name: '预约统计',
-        component: () =>import('@/views/statistics/order/index'),
+        component: () => import('@/views/statistics/order/index'),
         meta: { title: '预约统计' }
       }
     ]
   },
-
-
 
   {
     path: '/',
